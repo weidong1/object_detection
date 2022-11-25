@@ -1,0 +1,7 @@
+# this drop notebooks from GitHub language stats
+*.ipynb linguist-vendored
+*.js    eol=lf
+*.jsx   eol=lf
+*.json  eol=lf
+*.sh text eol=lf
+*.py text eol=lf
