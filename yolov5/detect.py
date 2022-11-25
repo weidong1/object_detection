@@ -1,4 +1,4 @@
-# YOLOv5 🚀 by Ultralytics, GPL-3.0 license
+# YOLOv5 by Ultralytics, GPL-3.0 license
 """
 Run YOLOv5 detection inference on images, videos, directories, globs, YouTube, webcam, streams, etc.
 
@@ -36,6 +36,7 @@ import torch
 
 FILE = Path(__file__).resolve()
 ROOT = FILE.parents[0]  # YOLOv5 root directory
+print("ROOT is: ", ROOT)
 if str(ROOT) not in sys.path:
     sys.path.append(str(ROOT))  # add ROOT to PATH
 ROOT = Path(os.path.relpath(ROOT, Path.cwd()))  # relative
