@@ -1,0 +1,1 @@
+python detect_dw.py --weights ./checkpoints/yolov5s.pt --source file --data ./data/coco128.yaml
