@@ -1,1 +1,5 @@
 yolov5/checkpoints/*.pt
+yolov5/*.pt
+yolov5/runs/
+__pycache__/
+*/__pycache__
