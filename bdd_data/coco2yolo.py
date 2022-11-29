@@ -41,25 +41,25 @@ def main(config):
 
 if __name__ == '__main__':
 
-    # config ={
-    #     "datasets": "COCO",
-    #     "img_path": "../../bdd_data_archive/bdd100k/bdd100k/images/100k/train",
-    #     "label": "../../bdd_data_archive/parsed/bdd100k_labels_images_det_coco_train.json",
-    #     "img_type": ".jpg",
-    #     "manipast_path": "./",
-    #     "output_path": "../../bdd_data_archive/parsed/trains/",
-    #     "cls_list": "./bdd100k.names",
-    # }
-
- 
     config ={
         "datasets": "COCO",
-        "img_path": "../../bdd_data_archive/bdd100k/bdd100k/images/100k/val",
-        "label": "../../bdd_data_archive/parsed/bdd100k_labels_images_det_coco_val.json",
+        "img_path": "../../bdd_data_archive/bdd100k/bdd100k/images/100k/train",
+        "label": "../../bdd_data_archive/parsed/bdd100k_labels_images_det_coco_train.json",
         "img_type": ".jpg",
         "manipast_path": "./",
-        "output_path": "../../bdd_data_archive/parsed/valids",
+        "output_path": "../../bdd_data_archive/parsed/trains/",
         "cls_list": "./bdd100k.names",
     }
+
+ 
+    # config ={
+    #     "datasets": "COCO",
+    #     "img_path": "../../bdd_data_archive/bdd100k/bdd100k/images/100k/val",
+    #     "label": "../../bdd_data_archive/parsed/bdd100k_labels_images_det_coco_val.json",
+    #     "img_type": ".jpg",
+    #     "manipast_path": "./",
+    #     "output_path": "../../bdd_data_archive/parsed/valids",
+    #     "cls_list": "./bdd100k.names",
+    # }
 
     main(config)

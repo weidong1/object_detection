@@ -42,7 +42,7 @@ def copy_filter(label_dir,image_dir,target_dir_images,target_dir_labels):
             if os.path.isfile(image_dir + '/' + image_name) == False:
                 print(" -- DELETE LABEL [Image file not found -- ]")
                 # print(label_path)
-                os.remove(label_path)
+                # os.remove(label_path)
             else:
                 target_labels=target_dir_labels+ '/' + label_name + '.txt'
                 shutil.copy(label_path,target_labels )
