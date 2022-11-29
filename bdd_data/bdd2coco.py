@@ -8,7 +8,7 @@ def parse_arguments():
     parser = argparse.ArgumentParser(description='BDD100K to COCO format')
     parser.add_argument(
           "-l", "--label_dir",
-          default="../../bdd_data_archive/bdd100k_lables_release/bdd100k/labels/",
+          default="../../bdd_data_archive/bdd100k_labels_release/bdd100k/labels/",
           help="root directory of BDD label Json files",
     )
     parser.add_argument(
