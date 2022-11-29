@@ -24,12 +24,12 @@ def copy_filter(label_dir,image_dir,target_dir_images,target_dir_labels):
             if os.path.isfile(label_dir + '/' + label_name) == False:
                 print(" -- DELETE IMAGE [Label file not found -- ]")
                 
-                print(image_path)
-#                 os.remove(image_path)
-#             else:
+                # print(image_path)
+                # os.remove(image_path)
+            else:
                 target_images=target_dir_images+ '/' + image_name + '.jpg'
                 shutil.copy(image_path,target_dir_images )
-                print(" --COPY IMAGE "+target_images)
+                # print(" --COPY IMAGE "+target_images)
 
 
     for label in os.listdir(label_dir):
@@ -41,12 +41,12 @@ def copy_filter(label_dir,image_dir,target_dir_images,target_dir_labels):
             label_path = label_dir + '/' + label_name + '.txt'
             if os.path.isfile(image_dir + '/' + image_name) == False:
                 print(" -- DELETE LABEL [Image file not found -- ]")
-                print(label_path)
-#                 os.remove(label_path)
-#             else:
+                # print(label_path)
+                os.remove(label_path)
+            else:
                 target_labels=target_dir_labels+ '/' + label_name + '.txt'
                 shutil.copy(label_path,target_labels )
-                print(" --COPY lABELS "+target_labels)
+                # print(" --COPY lABELS "+target_labels)
 
 '''创建存储目录
 mkdir -p bdd100k/images/trains
@@ -69,3 +69,14 @@ image_dir2 = "../../bdd_data_archive/bdd100k/bdd100k/images/100k/val"
 target_dir_images2="../../bdd_data_archive/images/valids"
 target_dir_labels2="../../bdd_data_archive/labels/valids"
 copy_filter(label_dir,image_dir,target_dir_images,target_dir_labels)
+
+# 统计下数量
+labels_list=glob.glob("../../bdd_data_archive/labels/trains"+"/"+"*.txt")
+images_list=glob.glob("../../bdd_data_archive/images/trains"+"/"+"*.jpg")
+print('train labels num:', len(labels_list))
+print('train imgs num:', len(images_list))
+
+labels_list2=glob.glob("../../bdd_data_archive/labels/valids"+"/"+"*.txt")
+images_list2=glob.glob("../../bdd_data_archive/images/valids"+"/"+"*.jpg")
+print('valid labels num:', len(labels_list2))
+print('valid imgs num:', len(images_list2))
