@@ -56,19 +56,19 @@ mkdir -p bdd100k/labels/valids
 '''
 
 # 1 check training data, 原来是 69863
-# label_dir = '../../bdd_data_archive/parsed/trains'
-# image_dir = "../../bdd_data_archive/bdd100k/bdd100k/images/100k/train"
-# target_dir_images="../../bdd_data_archive/images/trains"
-# target_dir_labels="../../bdd_data_archive/labels/trains"
-# copy_filter(label_dir,image_dir,target_dir_images,target_dir_labels)
+label_dir = '../../bdd_data_archive/parsed/trains'
+image_dir = "../../bdd_data_archive/bdd100k/bdd100k/images/100k/trains"
+target_dir_images="../../bdd_data_archive/images/trains"
+target_dir_labels="../../bdd_data_archive/labels/trains"
+copy_filter(label_dir,image_dir,target_dir_images,target_dir_labels)
 
 
 # 2 check validating data， 原来是 10000
-label_dir2 = '../../bdd_data_archive/parsed/valids'
-image_dir2 = "../../bdd_data_archive/bdd100k/bdd100k/images/100k/val"
-target_dir_images2="../../bdd_data_archive/images/valids"
-target_dir_labels2="../../bdd_data_archive/labels/valids"
-copy_filter(label_dir2,image_dir2,target_dir_images2,target_dir_labels2)
+# label_dir2 = '../../bdd_data_archive/parsed/valids'
+# image_dir2 = "../../bdd_data_archive/bdd100k/bdd100k/images/100k/val"
+# target_dir_images2="../../bdd_data_archive/images/valids"
+# target_dir_labels2="../../bdd_data_archive/labels/valids"
+# copy_filter(label_dir2,image_dir2,target_dir_images2,target_dir_labels2)
 
 # 统计下数量
 labels_list=glob.glob("../../bdd_data_archive/labels/trains"+"/"+"*.txt")
@@ -76,7 +76,7 @@ images_list=glob.glob("../../bdd_data_archive/images/trains"+"/"+"*.jpg")
 print('train labels num:', len(labels_list))
 print('train imgs num:', len(images_list))
 
-labels_list2=glob.glob("../../bdd_data_archive/labels/valids"+"/"+"*.txt")
-images_list2=glob.glob("../../bdd_data_archive/images/valids"+"/"+"*.jpg")
-print('valid labels num:', len(labels_list2))
-print('valid imgs num:', len(images_list2))
+# labels_list2=glob.glob("../../bdd_data_archive/labels/valids"+"/"+"*.txt")
+# images_list2=glob.glob("../../bdd_data_archive/images/valids"+"/"+"*.jpg")
+# print('valid labels num:', len(labels_list2))
+# print('valid imgs num:', len(images_list2))
