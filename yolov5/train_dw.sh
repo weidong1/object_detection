@@ -15,6 +15,6 @@
 
 
 # 基于yolo5预训练模型来训练bdd100k数据
-python train_dw.py --img 640 --batch 32 --epochs 5 --data ./data/bdd_coco.yaml --weights ./checkpoints/yolov5s.pt  --cfg ./models/yolov5s_bdd.yaml --name yolov5s_bdd_prew 
+python train_dw.py --img 640 --batch 32 --epochs 100 --data ./data/bdd_coco.yaml --weights ./checkpoints/yolov5s.pt  --cfg ./models/yolov5s_bdd.yaml --name yolov5s_bdd_prew 
 # 从头训练bdd100k数据
 # python train_dw.py --img 640 --batch 32 --epochs 5 --data ./data/bdd_coco.yaml --weights ''  --cfg ./models/yolov5s_bdd.yaml  --name yolov5s_bdd
